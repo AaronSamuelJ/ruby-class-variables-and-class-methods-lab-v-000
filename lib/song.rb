@@ -17,12 +17,12 @@ class Song
   def self.artists
     @@artists.uniq
   end
-  def self.genres 
+  def self.genres
     @@genres.uniq
   end
   def self.genre_count
     pop_count, rap_count = 0, 0
-    
+
     @@genres.each do |genre|
       case genre
       when "pop"
