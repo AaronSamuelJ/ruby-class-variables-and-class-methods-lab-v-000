@@ -42,5 +42,6 @@ class Song
       i += 1
     end
     hash
+    binding.pry
   end
 end
