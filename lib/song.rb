@@ -41,6 +41,5 @@ class Song
       hash["#{artist}"] += 1 if hash["#{artist}"]
     end
     hash
-    binding.pry
   end
 end
