@@ -35,6 +35,12 @@ class Song
     {"pop" => pop_count, "rap" => rap_count}
   end
   def self.artist_count
-    binding.pry
+    hash = {}
+    i = 0
+    @@artists.each do |artist|
+      hash["#{artist}"] ||= [i + 1]
+      i += 1
+    end
+    hash
   end
 end
